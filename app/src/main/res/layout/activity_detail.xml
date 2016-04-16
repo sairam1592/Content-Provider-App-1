@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.50"
+                android:scaleType="fitXY"
+                android:src="@drawable/contacts_detail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="8dp"
+            android:background="#E7EBDA"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_namelabel"
+                android:text="@string/name_label" />
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_numberlabel"
+                android:layout_below="@+id/textView_namelabel"
+                android:layout_marginTop="10dp"
+                android:text="@string/number_label" />
+
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_numberVal"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBottom="@+id/textView_numberlabel"
+                android:layout_toEndOf="@+id/textView_numberlabel" />
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_nameVal"
+                android:layout_above="@+id/textView_numberlabel"
+                android:layout_alignStart="@+id/textView_numberVal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="8dp"
+            android:background="#E7EBDA"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_Addresslabel"
+                android:text="@string/addr_label" />
+
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_addrVal"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBaseline="@+id/textView_Addresslabel"
+                android:layout_alignBottom="@+id/textView_Addresslabel"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView_Addresslabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="8dp"
+            android:background="#E7EBDA"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_complabel"
+                android:text="@string/comp_label" />
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_titlelabel"
+                android:layout_below="@+id/textView_complabel"
+                android:layout_marginTop="10dp"
+                android:text="@string/title_label" />
+
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_compVal"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBottom="@+id/textView_complabel"
+                android:layout_toEndOf="@+id/textView_complabel" />
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_titleVal"
+                android:layout_alignBottom="@+id/textView_titlelabel"
+                android:layout_alignStart="@+id/textView_compVal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginTop="8dp"
+            android:background="#E7EBDA"
+            android:padding="2dp">
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_emaillabel"
+                android:text="@string/email_label" />
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_nicknamelabel"
+                android:layout_below="@+id/textView_emaillabel"
+                android:layout_marginTop="10dp"
+                android:text="@string/nick_label" />
+
+            <TextView
+                style="@style/detailLabel"
+                android:id="@+id/textView_doblabel"
+                android:layout_below="@+id/textView_nicknamelabel"
+                android:layout_marginTop="10dp"
+                android:text="@string/dob_label" />
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_emailVal"
+                android:layout_above="@+id/textView_nicknamelabel"
+                android:layout_toEndOf="@+id/textView_nicknamelabel" />
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_nicknameVal"
+                android:layout_alignBaseline="@+id/textView_nicknamelabel"
+                android:layout_alignBottom="@+id/textView_nicknamelabel"
+                android:layout_toEndOf="@+id/textView_nicknamelabel" />
+
+            <TextView
+                style="@style/detailText"
+                android:id="@+id/textView_dobVal"
+                android:layout_alignBottom="@+id/textView_doblabel"
+                android:layout_alignStart="@+id/textView_nicknameVal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

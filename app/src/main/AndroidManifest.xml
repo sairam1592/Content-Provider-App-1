@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.contact.admin.contact">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/contact_label"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/contact_label"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/contact_label"
+            android:label="@string/app_detail"></activity>
+
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/login_icon"
+            android:label="@string/app_login"></activity>
+
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/register_icon"
+            android:label="@string/app_register"></activity>
+
+        <activity
+            android:name=".authentication.AuthActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/contact_label"
+            android:label="@string/app_splash"></activity>
+
+        <activity
+            android:name=".authentication.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/contact_label">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".authentication.ProviderClass"
+            android:authorities="com.contact.admin.contact.authentication.ProviderClass"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+    </application>
+
+</manifest>

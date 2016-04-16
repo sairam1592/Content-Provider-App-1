@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+        <EditText
+            style="@style/loginRegText"
+            android:inputType="textPersonName"
+            android:hint="@string/name_label"
+            android:id="@+id/editText_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="123dp" />
+
+        <EditText
+            style="@style/loginRegText"
+            android:inputType="textPassword"
+            android:hint="@string/pass_label"
+            android:id="@+id/editText_password"
+            android:layout_below="@+id/editText_name"
+            android:layout_marginTop="39dp" />
+
+        <EditText
+            style="@style/loginRegText"
+            android:inputType="textPassword"
+            android:hint="@string/repass_label"
+            android:id="@+id/editText_reenter"
+            android:layout_below="@+id/editText_password"
+            android:layout_marginTop="39dp" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/app_register"
+            android:id="@+id/button_register"
+            android:layout_below="@+id/editText_reenter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

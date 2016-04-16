@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout_main"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout3"
+            android:padding="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                style="@style/ImageStyle"
+                android:id="@+id/imageView_register"
+                android:alpha="0.70"
+                android:src="@drawable/register_icon" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_register"
+                android:id="@+id/button_register"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView_register" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout2"
+            android:padding="4dp"
+            android:layout_below="@+id/relativelayout3"
+            android:layout_alignStart="@+id/relativelayout3">
+
+            <ImageView
+                style="@style/ImageStyle"
+                android:id="@+id/imageView"
+                android:src="@drawable/login_icon" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_login"
+                android:id="@+id/button_login"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Contact Book</string>
+    <string name="app_detail">Contact Detail</string>
+    <string name="app_login">Login</string>
+    <string name="app_register">Register</string>
+    <string name="app_header">My Contacts</string>
+    <string name="app_splash">Welcome</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_signout">Sign out</string>
+    <string name="action_settings">Settings</string>
+    <string name="name_label">Name</string>
+    <string name="number_label">Number</string>
+    <string name="addr_label">Address</string>
+    <string name="comp_label">Company</string>
+    <string name="title_label">Title</string>
+    <string name="nick_label">NickName</string>
+    <string name="email_label">Email</string>
+    <string name="pass_label">Password</string>
+    <string name="repass_label">Re-enter Password</string>
+    <string name="dob_label">D-O-B</string>
+</resources>
